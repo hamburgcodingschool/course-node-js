@@ -41,6 +41,7 @@ https://hamburgcodingschool.com/courses/nodejs/
 Here, the students mainly replace Firebase with a Node.js application.  
 
 Covered topics:
+- npm
 - project setup with node
 - deployment (publishing)
 - using a database: `Couch DB`
