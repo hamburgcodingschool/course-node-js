@@ -26,10 +26,20 @@ Project Setup
 Express.js
 - explain: what is it? why do we need it?
 - deliver a first website (hello world)
+- migrate our application to be delivered by node/express
+
+Homework:
+- install MongoDB
 
 
 ## Session 2
 
+Database
+- Mongo DB
+- Task: set up Mongo DB
+
+Task:
+- migrate database from Firebase to local DB
 
 
 ## Session 3
