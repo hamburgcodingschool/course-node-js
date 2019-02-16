@@ -18,6 +18,7 @@ Node Framework
 - frontend, backend
 - what is npm?
 - package.json
+- modules, imports
 
 Project Setup
 - installing packages
@@ -40,14 +41,30 @@ Database
 
 Task:
 - migrate database from Firebase to local DB
+- save lat long, text, image url
+- save images
+- load posts with images from MongoDB
 
 
 ## Session 3
 
+Asynchronous calls
+- callbacks
+- async-await
+- promises
+
+Event Queue
 
 
 ## Session 4
 
+Router
+
+Creating a REST API
+- deliver data at certain path
+
+Architecture
+- best practices
 
 
 ## Session 5
