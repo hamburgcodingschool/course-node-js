@@ -53,26 +53,42 @@ Asynchronous calls
 - async-await
 - promises
 
+Task:
+- rewrite app to use async calls
+
 Event Queue
 
 
 ## Session 4
 
 Router
+- explain: what is it, what does it do?
+- rewrite our app to use router
+- 4 pages:
+  - map
+  - login
+  - post
+  - list view
+
+
+
+## Session 5
 
 Creating a REST API
 - deliver data at certain path
+- CRUD for our posts
+
+
+## Session 6
 
 Architecture
 - best practices
 
 
-## Session 5
+## If there is still time
 
-
-
-## Session 6
-
-
+- migrate Authentication (?)
+- user management
+- user groups (admin, visitors, authors)
 
 
