@@ -16,6 +16,7 @@ Node Runtime
 - what is node?
 - what is that server that is already running?
 - frontend, backend
+- ES6, ESnext
 
 NPM
 - what is npm?
@@ -135,5 +136,6 @@ Task:
 - Authentication with passport
 - user management
 - user groups (admin, visitors, authors)
+- TypeScript
 
 
