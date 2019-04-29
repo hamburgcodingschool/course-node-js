@@ -211,4 +211,11 @@ Asynchronous requests
 - previously, jQuery could do that with AJAX: `jQuery.ajax()`
 - show how you can do that in jQuery
 - now JavaScript can do that natively
+- but there are differences in the browser implementations
+- with ES6 and `fetch()` it is quite easy
+
+> **Debugging:**  
+> Put `debugger;` into your code:  
+> Will make the browser freeze.
+
 
