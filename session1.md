@@ -87,10 +87,9 @@ Express
 - express is a basic framework for node.js
 - it can do network related things like cookies, headers ...
 
-Node.js File System Documentation:  
-https://nodejs.org/api/fs.html
+## Create a web server
 
-Create a web server
+This is called for every request:
 ```
 let server = http.createServer((req, res) => {
   console.log("Request resolved to url '" + req.url + "'");
@@ -103,8 +102,46 @@ server.listen(SERVER_PORT, SERVER_HOSTNAME, (err) => {
   ...
 });
 ```
+- this is called once in the beginning when you start the server
 - as `SERVER_PORT` you can put 3000 or more
 - as `SERVER_HOSTNAME` you can put `127.0.0.1`
 - do a `console.log()` in the function and call the server to see if it works
 
+## Read a file
 
+Node.js File System Documentation:  
+https://nodejs.org/api/fs.html
+
+Task:
+- in your `createServer` function, read a file
+- be careful: always use async
+- if you use sync, this means that all other requests will have to wait until this file reading is done
+- explain `fs.readFile()` step by step
+
+```
+let fs = require("fs");
+```
+
+```
+fs.readFile('/etc/passwd/', (err, data) => {
+  ...
+});
+```
+
+Callbacks
+- node.js works with callbacks, not with promises
+- there are libraries that promisify everything, but if you start from scratch, you just have callbacks
+- we even use nested callbacks
+
+```
+let server = http.createServer((req, res) => {
+  fs.readFile('/public/index.html', (err, data) => {
+    if (err) throw err;
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/html');
+    res.end(data);
+  });
+});
+```
+- explain step by step
+- this is a relative path
