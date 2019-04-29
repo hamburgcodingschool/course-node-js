@@ -145,3 +145,39 @@ let server = http.createServer((req, res) => {
 ```
 - explain step by step
 - this is a relative path
+
+## Express
+
+Express JS  
+https://expressjs.com/
+
+Install:  
+```bash
+$ npm install express --save
+```
+
+Middleware
+- express is based on a middleware
+- a middleware is a callback function that is called when a request is made
+
+Deliver static files
+- express already has something for that
+
+```js
+var express = require('express');
+```
+
+```js
+app.use(express.static('public'));
+```
+
+Task:
+- change your index.js so that is uses express
+- use express for delivering your files in folder `public`
+- have a look at the Hello World example: https://expressjs.com/en/starter/hello-world.html
+- get it working with `index.html` and `test.js`
+
+Task:
+- take all your files from your travel blog
+- put it into `public`
+- see if it works
