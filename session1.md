@@ -87,3 +87,24 @@ Express
 - express is a basic framework for node.js
 - it can do network related things like cookies, headers ...
 
+Node.js File System Documentation:  
+https://nodejs.org/api/fs.html
+
+Create a web server
+```
+let server = http.createServer((req, res) => {
+  console.log("Request resolved to url '" + req.url + "'");
+});
+```
+- this will be called for every request
+- then your server needs to listen to the requests and do something on them
+```
+server.listen(SERVER_PORT, SERVER_HOSTNAME, (err) => {
+  ...
+});
+```
+- as `SERVER_PORT` you can put 3000 or more
+- as `SERVER_HOSTNAME` you can put `127.0.0.1`
+- do a `console.log()` in the function and call the server to see if it works
+
+
