@@ -181,3 +181,34 @@ Task:
 - take all your files from your travel blog
 - put it into `public`
 - see if it works
+
+Big goal:
+- in the end we want to move our application from Firebase into our node.js app
+- to have control over everything
+
+## REST APIs
+
+GET and POST
+- HTTP has CRUD methods, like GET and POST
+- we can handle all kinds of these request methods
+- if you want to read something, you use GET
+- if you want to save something on the server, you use POST
+
+Task:
+- create a route `/api/marker` as GET request
+- return a test JSON, e.g. `{ 'test': 1 }`
+- we also need to set the content type of the response to JSON
+
+```js
+app.get('/api/marker', function (req, res) {
+  res.setHeader('Content-Type', "application/json");
+  res.send("{ 'test': 1 }");
+});
+```
+
+Asynchronous requests
+- also called `xhr`
+- previously, jQuery could do that with AJAX: `jQuery.ajax()`
+- show how you can do that in jQuery
+- now JavaScript can do that natively
+
