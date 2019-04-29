@@ -61,18 +61,18 @@ HTTP
 - it delivers our HTML, CSS, JS
 - certain libraries (packages) help with that
 - e.g. the HTTP module
-```
+```js
 let http = require("http");
 ```
 
 Method that is called if a browser requests it:
-```
+```js
 let server = http.createServer((req, res) => {
   ...
 });
 ```
 - `server` is the variable that handles all the listening
-```
+```js
 server.listen(SERVER_PORT, SERVER_HOSTNAME, (err) => {
   ...
 });
@@ -90,14 +90,14 @@ Express
 ## Create a web server
 
 This is called for every request:
-```
+```js
 let server = http.createServer((req, res) => {
   console.log("Request resolved to url '" + req.url + "'");
 });
 ```
 - this will be called for every request
 - then your server needs to listen to the requests and do something on them
-```
+```js
 server.listen(SERVER_PORT, SERVER_HOSTNAME, (err) => {
   ...
 });
@@ -118,11 +118,11 @@ Task:
 - if you use sync, this means that all other requests will have to wait until this file reading is done
 - explain `fs.readFile()` step by step
 
-```
+```js
 let fs = require("fs");
 ```
 
-```
+```js
 fs.readFile('/etc/passwd/', (err, data) => {
   ...
 });
@@ -133,7 +133,7 @@ Callbacks
 - there are libraries that promisify everything, but if you start from scratch, you just have callbacks
 - we even use nested callbacks
 
-```
+```js
 let server = http.createServer((req, res) => {
   fs.readFile('/public/index.html', (err, data) => {
     if (err) throw err;
