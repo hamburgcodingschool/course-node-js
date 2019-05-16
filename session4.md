@@ -1,3 +1,5 @@
+## Session 4
+
 Goal for today:
 - we want to dynamically generate websites with Node.js
 
@@ -19,5 +21,19 @@ Template engine:
 Task:
 - install express-handlebars
 - https://www.npmjs.com/package/express-handlebars
+- require handlebars
 
+Explain:
+- we map `.handlebars` file extension to handlebars library
+```
+exp.require('handlebars', exphbs());
+exp.set('view engine', 'handlebars');
+```
+
+Show: 
+- `index.html` layout with:
+```
+{{{body}}}
+```
+- `home.handlebars`
 
