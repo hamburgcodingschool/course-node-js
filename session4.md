@@ -37,3 +37,8 @@ Show:
 ```
 - `home.handlebars`
 
+Task:
+- build that in your app
+- output: some `<h1>Home</h1>`
+
+
